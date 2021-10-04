@@ -14,7 +14,7 @@ Overview
 
 Description
 ====
-- Dockerfile(Dockerfile.notebook, Dockerfile.postgres)
+- Dockerfile(dockerfiles/notebook/Dockerfile, dockerfiles/notebook/Dockerfile)
 - docker-compose.yml
 - スーパーの架空購買データと架空個人情報(csv)
 - データベースを初期設定するための各種スクリプト
@@ -28,9 +28,11 @@ Requirement
 
 Install
 ====
-- $ git clone [Repository URL] ※
-- $ cd 100knocks-preprocess
-- $ docker-compose up -d --build
+::
+
+  git clone git@github.com:The-Japan-DataScientist-Society/100knocks-preprocess.git
+  cd 100knocks-preprocess
+  docker-compose up -d --build
 
 ※ OSユーザーのホームディレクトリ配下以外にダウンロードする場合、Dockerの共有設定が別途必要となります
 
@@ -64,6 +66,7 @@ Document
 Link
 ====
 本コンテンツの内容やセットアップ手順について解説いただいているサイト、Dockerについて基本から学べるサイト
+
 - 【データサイエンスを学ぶあなたへ】100本ノック - 構造化データ処理編 - 最速レビュー動画！【データサイエンティスト協会】#062
   - https://www.youtube.com/watch?v=fAyj0V2iAc4
 - データサイエンス100本ノック（構造化データ加工編）を試してみた
